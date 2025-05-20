@@ -1,0 +1,173 @@
+\ProvidesPackage{RucTextStyle}
+
+% 数学符号相关
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsfonts}
+\RequirePackage{bm}
+% 表格相关
+\RequirePackage{array}
+\RequirePackage{booktabs}
+\RequirePackage{multirow}
+\RequirePackage{multicol}
+\RequirePackage{tabularx}
+% 图形相关
+\RequirePackage{float}
+\RequirePackage{graphicx}
+% 排版格式相关
+\RequirePackage{geometry}
+\RequirePackage{titlesec}
+\RequirePackage{setspace}
+\RequirePackage{fancyhdr}
+\RequirePackage{titletoc}
+
+\RequirePackage{appendix}
+\RequirePackage{hyperref}
+\RequirePackage{enumerate}
+\RequirePackage{tcolorbox}
+\RequirePackage{xcolor}
+\RequirePackage{caption}
+\RequirePackage{enumitem}
+\RequirePackage{comment}
+
+
+\RequirePackage[linesnumbered,ruled]{algorithm2e}
+\SetAlgoCaptionSeparator{}
+\renewcommand{\algorithmcfname}{算法}
+
+% 参考文献样式
+\RequirePackage{gbt7714}
+\RequirePackage{natbib}
+% numbers: 正文平标，方括号
+% super：上角标
+% author-year
+
+% 字体
+\RequirePackage[T1]{fontenc}
+\RequirePackage{fontspec}
+\RequirePackage{txfonts}
+\RequirePackage{xeCJK}
+
+\RequirePackage{RucTextFont}
+\renewcommand{\heiti}{\sffamily}
+\renewcommand{\songti}{\normalfont}
+
+% 页边距
+\geometry{a4paper,bindingoffset=0.5cm,left=1.5cm,right=1.5cm,top=2cm,bottom=2cm}
+% 页眉页脚
+\pagestyle{fancy}
+\lhead{}\chead{\includegraphics[width=4.13cm,height=0.98cm]{RucTextAssets/head.png}}\rhead{}
+\lfoot{}\rfoot{}
+% 图表标题 
+\captionsetup{font={small},labelfont={bf}}
+\captionsetup[table]{skip=3pt}
+\captionsetup[figure]{skip=3pt}
+% 图表编号按章节排序（可选）
+% \renewcommand {\thetable} {\thesection{}.\arabic{table}}
+% \renewcommand {\thefigure} {\thesection{}.\arabic{figure}}
+% 目录
+\titlecontents{section}[2.3em]{\bfseries}{\contentslabel{2.3em}} {\hspace*{-2.3em}}{\titlerule*[1pc]{.}\contentspage}
+% 章节标题
+\titleformat{\section}{\centering \zihao{3} \bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\flushleft \zihao{4} \bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\flushleft \zihao{-4} \bfseries}{\thesubsubsection}{1em}{}
+
+% 分项标题
+\setlist[enumerate,1]{label=(\arabic*)}
+\setlist[enumerate,2]{label=\textcircled{\scriptsize\arabic*}}
+\setlist[enumerate,3]{label=(\alph*)}
+%圆形脚注
+\RequirePackage{pifont}
+\RequirePackage[perpage,symbol*]{footmisc}
+\DefineFNsymbols{circled}{{\ding{192}}{\ding{193}}{\ding{194}}{\ding{195}}{\ding{196}}{\ding{197}}{\ding{198}}{\ding{199}}{\ding{200}}{\ding{201}}}
+\setfnsymbol{circled}
+%目录和引用超链接
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black,
+}
+
+% 封面页
+\def\topic#1{\def\@topic{#1}}
+\def\school#1{\def\@school{#1}}
+\def\major#1{\def\@major{#1}}
+\def\grade#1{\def\@grade{#1}}
+\def\studentid#1{\def\@studentid{#1}}
+\def\advisor#1{\def\@advisor{#1}}
+\def\subtitle#1{\def\@subtitle{#1}}
+\renewcommand{\maketitle}{
+  \begin{titlepage}
+    \thispagestyle{fancy}\cfoot{}
+    \begin{flushright}
+      \vspace{1em}
+    \end{flushright}
+
+    \center\fontsize{28pt}{\baselineskip}\textbf{\@topic}\par
+    \vspace{24mm}
+
+    \centering
+    \fontsize{28pt}{\baselineskip}\textbf{\@title}
+    \vspace{3mm}
+    \begin{spacing}{1.2}
+      \LARGE\selectfont{\textbf{\@subtitle}}
+    \end{spacing}
+    \flushleft
+    \vspace{48mm}
+    \begin{spacing}{2}\center
+      \fontsize{20pt}{0}
+      \textbf{作\qquad 者：\underline{\makebox[80mm][c]{\@author}}}\hfill\par
+      \textbf{学\qquad 院：\underline{\makebox[80mm][c]{\@school}}}\hfill\par
+      \textbf{专\qquad 业：\underline{\makebox[80mm][c]{\@major}}}\hfill\par
+      \textbf{年\qquad 级：\underline{\makebox[80mm][c]{\@grade}}}\hfill\par
+      \textbf{学\qquad 号：\underline{\makebox[80mm][c]{\@studentid}}}\hfill\par
+      \textbf{指导教师：\underline{\makebox[80mm][c]{\@advisor}}}\hfill\par
+      \textbf{日\qquad 期：\underline{\makebox[80mm][c]{\@date}}}\hfill
+    \end{spacing}
+  \end{titlepage}
+}
+
+\def\keywords#1{\def\@keywords{#1}}
+\def\enkeywords#1{\def\@enkeywords{#1}}
+\renewcommand{\abstractname}{\textbf{\fontsize{16pt}{0} \selectfont 摘要}}
+\renewenvironment{abstract}
+{\par\fontsize{12pt}{0}\noindent\mbox{}\hfill{\bfseries \abstractname}\hfill\mbox{}\par\vskip 2.5ex \setstretch{1.5}}
+{\par\vskip 2.5ex
+  \textbf{关键词：} \@keywords
+  \par\vskip 2.5ex
+  \setcounter{page}{1}
+  \pagenumbering{Roman}
+  \cfoot{\thepage}
+  \newpage}
+
+\newcommand{\enabstractname}{\textbf{\fontsize{16pt}{0} \selectfont Abstract}}
+\newenvironment{enabstract}
+{\par\fontsize{12pt}{0}\noindent\mbox{}\hfill{\bfseries \enabstractname}\hfill\mbox{}\par\vskip 2.5ex \setstretch{1.5}}
+{\par\vskip 2.5ex
+  \textbf{Keywords:} \@enkeywords
+  \par\vskip 2.5ex \cfoot{\thepage} \newpage}
+
+\let\oldtoc\tableofcontents
+\renewcommand{\tableofcontents}{
+  \thispagestyle{fancy}
+  \renewcommand\contentsname{目\ 录}
+  \renewcommand\listfigurename{插\ 图}
+  \renewcommand\listtablename{表\ 格}
+  \oldtoc
+  \cfoot{}
+}
+
+\newcommand{\signature}{
+  \vspace{\fill} \noindent {\fontsize{14pt}{0} \textbf{作者签名}：\underline{\makebox[50mm][c]{}}}
+}
+
+% 正文格式
+\newcommand{\makedoc}{
+  \setstretch{1.25}
+  \setcounter{page}{1}
+  \pagenumbering{arabic}
+  \pagestyle{fancy}
+  \cfoot{\fontsize{10.5pt}{0} 第 \thepage 页}
+  \newpage
+}
