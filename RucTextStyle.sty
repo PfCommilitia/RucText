@@ -128,6 +128,19 @@
   \end{titlepage}
 }
 
+\newcommand{\simpletitle}{
+  \vbox{
+    \begin{flushright}
+      \vspace{1em}
+    \end{flushright}
+
+    \centering
+    \fontsize{28pt}{\baselineskip}\textbf{\@topic}\par
+    \vspace{3mm}
+    \fontsize{16pt}{0}\textit{\@author}\quad \@studentid
+  }
+}
+
 \def\keywords#1{\def\@keywords{#1}}
 \def\enkeywords#1{\def\@enkeywords{#1}}
 \renewcommand{\abstractname}{\textbf{\fontsize{16pt}{0} \selectfont 摘要}}
