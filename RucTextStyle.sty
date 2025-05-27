@@ -104,26 +104,26 @@
       \vspace{1em}
     \end{flushright}
 
-    \center\fontsize{28pt}{\baselineskip}\textbf{\@topic}\par
+    \center\zihao{1}\textbf{\@topic}\par
     \vspace{24mm}
 
     \centering
-    \fontsize{28pt}{\baselineskip}\textbf{\@title}
+    \zihao{1}\textbf{\@title}
     \vspace{3mm}
     \begin{spacing}{1.2}
-      \LARGE\selectfont{\textbf{\@subtitle}}
+      \zihao{-2}\selectfont{\textbf{\@subtitle}}
     \end{spacing}
     \flushleft
     \vspace{48mm}
-    \begin{spacing}{2}\center
-      \fontsize{20pt}{0}
-      \textbf{作\qquad 者：\underline{\makebox[80mm][c]{\@author}}}\hfill\par
-      \textbf{学\qquad 院：\underline{\makebox[80mm][c]{\@school}}}\hfill\par
-      \textbf{专\qquad 业：\underline{\makebox[80mm][c]{\@major}}}\hfill\par
-      \textbf{年\qquad 级：\underline{\makebox[80mm][c]{\@grade}}}\hfill\par
-      \textbf{学\qquad 号：\underline{\makebox[80mm][c]{\@studentid}}}\hfill\par
-      \textbf{指导教师：\underline{\makebox[80mm][c]{\@advisor}}}\hfill\par
-      \textbf{日\qquad 期：\underline{\makebox[80mm][c]{\@date}}}\hfill
+    \begin{spacing}{1.5}\center
+      \zihao{-2}
+      \textbf{作\qquad 者：\underline{\makebox[70mm][c]{\@author}}}\hfill\par
+      \textbf{学\qquad 院：\underline{\makebox[70mm][c]{\@school}}}\hfill\par
+      \textbf{专\qquad 业：\underline{\makebox[70mm][c]{\@major}}}\hfill\par
+      \textbf{年\qquad 级：\underline{\makebox[70mm][c]{\@grade}}}\hfill\par
+      \textbf{学\qquad 号：\underline{\makebox[70mm][c]{\@studentid}}}\hfill\par
+      \textbf{指导教师：\underline{\makebox[70mm][c]{\@advisor}}}\hfill\par
+      \textbf{日\qquad 期：\underline{\makebox[70mm][c]{\@date}}}\hfill
     \end{spacing}
   \end{titlepage}
 }
@@ -135,17 +135,17 @@
     \end{flushright}
 
     \centering
-    \fontsize{28pt}{\baselineskip}\textbf{\@topic}\par
+    \zihao{1}\textbf{\@topic}\par
     \vspace{3mm}
-    \fontsize{16pt}{0}\textit{\@author}\quad \@studentid
+    \zihao{3}\textit{\@author}\quad \@studentid
   }
 }
 
 \def\keywords#1{\def\@keywords{#1}}
 \def\enkeywords#1{\def\@enkeywords{#1}}
-\renewcommand{\abstractname}{\textbf{\fontsize{16pt}{0} \selectfont 摘要}}
+\renewcommand{\abstractname}{\textbf{\zihao{3} \selectfont 摘要}}
 \renewenvironment{abstract}
-{\par\fontsize{12pt}{0}\noindent\mbox{}\hfill{\bfseries \abstractname}\hfill\mbox{}\par\vskip 2.5ex \setstretch{1.5}}
+{\par\zihao{-4}\noindent\mbox{}\hfill{\bfseries \abstractname}\hfill\mbox{}\par\vskip 2.5ex \setstretch{1.5}}
 {\par\vskip 2.5ex
   \textbf{关键词：} \@keywords
   \par\vskip 2.5ex
@@ -154,9 +154,9 @@
   \cfoot{\thepage}
   \newpage}
 
-\newcommand{\enabstractname}{\textbf{\fontsize{16pt}{0} \selectfont Abstract}}
+\newcommand{\enabstractname}{\textbf{\zihao{3} \selectfont Abstract}}
 \newenvironment{enabstract}
-{\par\fontsize{12pt}{0}\noindent\mbox{}\hfill{\bfseries \enabstractname}\hfill\mbox{}\par\vskip 2.5ex \setstretch{1.5}}
+{\par\zihao{-4}\noindent\mbox{}\hfill{\bfseries \enabstractname}\hfill\mbox{}\par\vskip 2.5ex \setstretch{1.5}}
 {\par\vskip 2.5ex
   \textbf{Keywords:} \@enkeywords
   \par\vskip 2.5ex \cfoot{\thepage} \newpage}
@@ -172,7 +172,7 @@
 }
 
 \newcommand{\signature}{
-  \vspace{\fill} \noindent {\fontsize{14pt}{0} \textbf{作者签名}：\underline{\makebox[50mm][c]{}}}
+  \vspace{\fill} \noindent {\zihao{-4} \textbf{作者签名}：\underline{\makebox[50mm][c]{}}}
 }
 
 % 正文格式
@@ -181,6 +181,6 @@
   \setcounter{page}{1}
   \pagenumbering{arabic}
   \pagestyle{fancy}
-  \cfoot{\fontsize{10.5pt}{0} 第 \thepage 页}
+  \cfoot{\zihao{5} 第 \thepage 页}
   \newpage
 }
