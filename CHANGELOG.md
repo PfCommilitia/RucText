@@ -2,6 +2,16 @@
 
 本项目使用此文件按照时间倒序记录每一个 Commit 的更新内容，以避免分割 Commit。
 
+## Commit v2025-05-28
+
+### 功能改进
+
+- 伪代码改用 `algorithm` `algorithmicx` 和 `algpseudocode`。
+
+### 视觉改进
+
+- 伪代码标题不再使用中文 `算法`。
+
 ## Commit v2025-05-27b
 
 ### 视觉改进
