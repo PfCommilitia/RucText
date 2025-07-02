@@ -2,6 +2,12 @@
 
 本项目使用此文件按照时间倒序记录每一个 Commit 的更新内容，以避免分割 Commit。
 
+## Commit v2025-07-02
+
+### 视觉改进
+
+- 修改字体设置以确保商用免费：将“PingFang”改为“方正黑体”，“SF Pro Display”改为“Open Sans”，“SF Mono”改为“Maple Mono”。
+
 ## Commit v2025-06-03
 
 ### 功能改进
