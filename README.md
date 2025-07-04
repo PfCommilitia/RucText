@@ -26,7 +26,7 @@ RucText/
 ## 注意事项
 
 - 不要将要使用的 PDF 素材放到项目根目录，根目录下的所有 PDF 文件都将视为编译后文件，并被 Git 忽略。
-- 使用的所有字体包括 EB Garamond、FZShuSong-Z01（方正书宋 GBK）、Source Han Serif SC（思源宋体）、Symbols Nerd Font、Open Sans、FZHei-B01（方正黑体 GBK）、Sarasa Gothic SC（思源黑体）、Maple Mono、STIX Two Math、FZKai-Z03（方正楷体 GBK）。所有字体的许可证均允许免费商用。
+- 使用的所有字体包括 EB Garamond、FZShuSong-Z01（方正书宋 GBK）、Source Han Serif SC（思源宋体）、Symbols Nerd Font、Open Sans、FZHei-B01（方正黑体 GBK）、Sarasa Gothic SC（思源黑体）、Maple Mono、STIX Two Math、FZKai-Z03（方正楷体 GBK）。所有字体的许可证均允许免费商用，可以在[此处](https://www.dropbox.com/scl/fo/muhm4rddf4tlytqdph189/AEwl6rNMu6HShBzQTIyFTqI?rlkey=4lhpvzfiiclh5sakodie3dz7l&st=yq04y59k&dl=0)下载，字体一切权利归原作者所有。
 
 ## 更新日志
 
