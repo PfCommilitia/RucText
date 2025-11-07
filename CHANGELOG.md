@@ -2,6 +2,15 @@
 
 本项目使用此文件按照时间倒序记录每一个 Commit 的更新内容，以避免分割 Commit。
 
+## Commit v2025-11-07
+
+### 视觉改进
+
+- 更新字体设置。
+  - 英文主字体由 EB Garamond 改为 Cormorant Garamond。
+  - 无衬线字体由 Sarasa Gothic SC 改为 Noto Sans CJK SC。
+  - 衬线字体由 Source Han Serif SC 改为 Noto Serif CJK SC。
+
 ## Commit v2025-10-22
 
 ### 功能改进
@@ -11,8 +20,8 @@
 ### 视觉改进
 
 - 更新字体设置。
-  - 英文无衬线字体使用 Sarasa Gothic SC，其英文部分使用 Inter 为基底。
-  - 英文等宽字体增加后备 EB Garamond，考虑到字符覆盖这一设置可能没有实际意义。
+  - 英文无衬线字体使用 Noto Sans CJK SC，其英文部分使用 Inter 为基底。
+  - 英文等宽字体增加后备 Cormorant Garamond，考虑到字符覆盖这一设置可能没有实际意义。
 
 ## Commit v2025-07-04a
 
@@ -104,13 +113,13 @@
 
 - 使用上标参考文献编号。
 - 更新字体设置，新的字体设置为：
-  - 英文主字体：EB Garamond, FZShuSong-Z01, Source Han Serif SC, Symbols Nerd Font
-  - 英文无衬线字体：SF Pro Display, PingFang SC, PingFang TC, Sarasa Gothic SC, Symbols Nerd Font
-  - 英文等宽字体：SF Mono, PingFang SC, PingFang TC, Sarasa Gothic SC, Symbols Nerd Font Mono
-  - 英文数学字体：STIX Two Math, FZShuSong-Z01, Source Han Serif SC, Symbols Nerd Font
-  - 中文主字体：EB Garamond, FZShuSong-Z01, Source Han Serif SC, Symbols Nerd Font
-  - 中文粗体主字体：EB Garamond, PingFang SC, PingFang TC, Sarasa Gothic SC, Symbols Nerd Font
-  - 中文斜体主字体：EB Garamond, FZKai-Z03, Source Han Serif SC, Symbols Nerd Font
-  - 中文无衬线字体：SF Pro Display, PingFang SC, PingFang TC, Sarasa Gothic SC, Symbols Nerd Font
-  - 中文等宽字体：SF Mono, PingFang SC, PingFang TC, Sarasa Gothic SC, Symbols Nerd Font Mono
+  - 英文主字体：Cormorant Garamond, FZShuSong-Z01, Noto Serif CJK SC, Symbols Nerd Font
+  - 英文无衬线字体：SF Pro Display, PingFang SC, PingFang TC, Noto Sans CJK SC, Symbols Nerd Font
+  - 英文等宽字体：SF Mono, PingFang SC, PingFang TC, Noto Sans CJK SC, Symbols Nerd Font Mono
+  - 英文数学字体：STIX Two Math, FZShuSong-Z01, Noto Serif CJK SC, Symbols Nerd Font
+  - 中文主字体：Cormorant Garamond, FZShuSong-Z01, Noto Serif CJK SC, Symbols Nerd Font
+  - 中文粗体主字体：Cormorant Garamond, PingFang SC, PingFang TC, Noto Sans CJK SC, Symbols Nerd Font
+  - 中文斜体主字体：Cormorant Garamond, FZKai-Z03, Noto Serif CJK SC, Symbols Nerd Font
+  - 中文无衬线字体：SF Pro Display, PingFang SC, PingFang TC, Noto Sans CJK SC, Symbols Nerd Font
+  - 中文等宽字体：SF Mono, PingFang SC, PingFang TC, Noto Sans CJK SC, Symbols Nerd Font Mono
 - 使用 `tex-fmt` 重新格式化文件。
