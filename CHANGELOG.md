@@ -2,6 +2,13 @@
 
 本项目使用此文件按照时间倒序记录每一个 Commit 的更新内容，以避免分割 Commit。
 
+## Commit v2025-11-08
+
+### 视觉改进
+
+- 更新字体设置。
+  - 英文主字体由 Cormorant Garamond 改为 EB Garamond，以优化打印效果。
+
 ## Commit v2025-11-07
 
 ### 视觉改进
