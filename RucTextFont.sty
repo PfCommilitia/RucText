@@ -4,44 +4,29 @@
 \RequirePackage[AutoFallBack, AutoFakeSlant, AutoFakeBold]{xeCJK}
 \RequirePackage[math-style=ISO, bold-style=ISO, mathrm=sym]{unicode-math}
 
-\setmainfont{EB Garamond}[
-  FallBack = {FZShuSong-Z01},
-  FallBack = {Noto Serif CJK SC},
-  FallBack = {Symbols Nerd Font}
-]
+\setmainfont{EB Garamond}
+\setsansfont{Noto Sans CJK SC}
+\setmonofont{Maple Mono}
+\setmathfont{STIX Two Math}
 
-\setsansfont{Noto Sans CJK SC}[
-  FallBack = {FZHei-B01},
-  FallBack = {Symbols Nerd Font}
+\setCJKmainfont{FZShuSong-Z01}[
+  BoldFont = FZHei-B01,
+  ItalicFont = FZKai-Z03,
+  BoldItalicFont = FZKai-Z03
 ]
-
-\setmonofont{Maple Mono}[
-  FallBack = {FZHei-B01},
-  FallBack = {Noto Sans CJK SC},
-  FallBack = {Symbols Nerd Font Mono}
-]
-
-\setmathfont{STIX Two Math}[
-  FallBack={EB Garamond},
-  FallBack={FZShuSong-Z01},
-  FallBack={Noto Serif CJK SC},
-  FallBack={Symbols Nerd Font}
-]
-
-\setCJKmainfont[BoldFont={FZHei-B01}, ItalicFont={FZKai-Z03}]{FZShuSong-Z01}
-\setCJKfallbackfamilyfont{\CJKrmdefault}[]{
-  [BoldFont={Noto Sans CJK SC}] {Noto Serif CJK SC},
-  [] {Symbols Nerd Font}
+\setCJKfallbackfamilyfont{\CJKrmdefault}{
+  [BoldFont={Noto Sans CJK SC}]{Noto Serif CJK SC},
+  {Symbols Nerd Font}
 }
 
 \setCJKsansfont{FZHei-B01}
-\setCJKfallbackfamilyfont{\CJKsfdefault}[]{
-  [] {Noto Sans CJK SC},
-  [] {Symbols Nerd Font}
+\setCJKfallbackfamilyfont{\CJKsfdefault}{
+  {Noto Sans CJK SC},
+  {Symbols Nerd Font}
 }
 
 \setCJKmonofont{FZHei-B01}
-\setCJKfallbackfamilyfont{\CJKttdefault}[]{
-  [] {Noto Sans CJK SC},
-  [] {Symbols Nerd Font Mono}
+\setCJKfallbackfamilyfont{\CJKttdefault}{
+  {Noto Sans CJK SC},
+  {Symbols Nerd Font Mono}
 }
